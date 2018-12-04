@@ -1,5 +1,5 @@
 {
-	"name":"nailuo1/php",
+	"name":"nailuo1/web",
 	"require":{
 		"monolog/monolog":"1.0.*"
 	},
