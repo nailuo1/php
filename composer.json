@@ -1,0 +1,15 @@
+{
+	"name":"nailuo1/php",
+	"require":{
+		"monolog/monolog":"1.0.*"
+	},
+	"autoload": {
+        "psr-4": {"Acme\\": "src/"}
+    },
+	"repositories": {
+		"packagist": {
+			"type": "composer",
+			"url": "https://packagist.phpcomposer.com"
+		}
+	}
+}
