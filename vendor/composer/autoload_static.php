@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit976f1f6eea7701c94fc5b1e8feca6e9d
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PhpAmqpLib\\' => 11,
+        ),
         'A' => 
         array (
             'Acme\\' => 5,
@@ -14,19 +18,13 @@ class ComposerStaticInit976f1f6eea7701c94fc5b1e8feca6e9d
     );
 
     public static $prefixDirsPsr4 = array (
+        'PhpAmqpLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
+        ),
         'Acme\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'M' => 
-        array (
-            'Monolog' => 
-            array (
-                0 => __DIR__ . '/..' . '/monolog/monolog/src',
-            ),
         ),
     );
 
@@ -35,7 +33,6 @@ class ComposerStaticInit976f1f6eea7701c94fc5b1e8feca6e9d
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit976f1f6eea7701c94fc5b1e8feca6e9d::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit976f1f6eea7701c94fc5b1e8feca6e9d::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit976f1f6eea7701c94fc5b1e8feca6e9d::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
