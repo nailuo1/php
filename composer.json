@@ -1,11 +1,14 @@
 {
 	"name":"nailuo1/web",
+	"version":"1.0.0",
 	"require":{
 		"php-amqplib/php-amqplib": "2.6.1"
 	},
 	"autoload": {
         "psr-4": {"Acme\\": "src/"}
     },
+
+    //资源包的来源
 	"repositories": {
 		"packagist": {
 			"type": "composer",
